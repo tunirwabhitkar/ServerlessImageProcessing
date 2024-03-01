@@ -7,7 +7,7 @@ import cv2
 
 
 def convertToGrayAPI(img):
-    API_ENDPOINT = 'https://n5i2rbhqyh.execute-api.us-east-1.amazonaws.com/dev'
+    API_ENDPOINT = 'YOUR_APIENDPOINT'
 
     is_success, im_buf_arr = cv2.imencode(".png", img)
     byte_im = im_buf_arr.tobytes()
